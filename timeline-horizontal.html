@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.css">
+	<style>
+		.timeline-horizontal{text-align: center; font-size: 16px; line-height: 1.4em;}
+		.timeline-horizontal .col-md-3{padding: 0;}
+		.timeline-title{position: relative; padding: 10px 10px 20px 10px;}
+		.timeline-title:before{ content: '●'; position: absolute;	left: 0;	bottom: 0;	width: 100%;	height: 1px;	background-color: #7f2dc1;	color: #7f2dc1;	font-size: 27px;	line-height: 0px;	/* text-indent: -145px; */ }
+		.timeline-title-bottom{padding: 20px 10px 10px 10px;}
+		@media screen and (max-width: 768px) {
+
+			.timeline-horizontal .col-md-3 {padding: 0 10px;}
+			.timeline-horizontal{text-align: left;}
+			.timeline-title, .timeline-title-bottom{padding-left: 60px;}
+			.timeline-title{padding-bottom: 0;}
+			.timeline-title-bottom{padding-top: 5px;}
+			.timeline-title::before{display: none;}
+			.timeline-title-bottom::before {content: '●'; position: absolute;	left: 30px;	bottom: 0;	width: 1px;	height: 100%;	background-color: #7f2dc1;	color: #7f2dc1;	font-size: 27px;	line-height: 60px; text-indent: -8px;}
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="timeline-horizontal">
+
+			<div class="row">
+
+				<div class="col-md-3">
+					<div class="timeline-title"><strong>Внутренняя оптимизация:</strong><br> адаптация сайта под требования поисковых систем по более чем 300 показателям релевантности</div>
+					<div class="timeline-title-bottom">Изучим Вашу сферу деятельности, проанализируем конкурентов и соберем полный список запросов на Вашу тематику</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="timeline-title"><strong>Внешняя оптимизация:</strong><br> поднятие авторитета сайта в поисковых системах по 20 показателям ранжирования</div>
+					<div class="timeline-title-bottom">Для каждого ключа создадим и отптимизируем страницу, повыся поведенческие факторы</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="timeline-title"><strong>Поведенческие факторы:</strong><br> воздействуем на показатели сайта, зависящие от поведения его посетителей и влияющие на место сайта в топ-10 поисковой выдачи</div>
+					<div class="timeline-title-bottom">Наполним сайт уникальным контентом</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="timeline-title"><strong>Коммерческие факторы:</strong><br> прорабатываем коммерческие факторы, которые повышают доверие к сайту у пользователя и увеличивают конверсию</div>
+					<div class="timeline-title-bottom">Проведем комплексную SEO-оптимизацию, выявим ошибки, которые мешают правильной индексации Вашего сайта</div>
+				</div>
+
+			</div>
+	
+			</div>
+
+	</div>
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://seo/js/libs/jquery.equalheights.min.js"></script>
+	<script>
+		if(document.documentElement.clientWidth > 768) {
+			$('.timeline-title').equalHeights();
+		}
+	</script>
+</body>
+</html>
